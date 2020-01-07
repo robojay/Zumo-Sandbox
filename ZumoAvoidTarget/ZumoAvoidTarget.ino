@@ -21,7 +21,7 @@ const unsigned int LeftMotorIndex = 1;
 const unsigned int RightMotorIndex = 0;
 const unsigned int DelayIndex = 2;
 
-uint16_t MoveTable[16][3];
+int16_t MoveTable[16][3];
 
 void defineMove(unsigned int index, uint16_t left, uint16_t right, uint16_t delay) {
   MoveTable[index][RightMotorIndex] = right;

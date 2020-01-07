@@ -40,7 +40,7 @@ const unsigned int DelayIndex = 2;
 
 const unsigned int SensorThreshold = 500;
 
-uint16_t MoveTable[8][3];
+int16_t MoveTable[8][3];
 
 void defineMove(unsigned int index, uint16_t left, uint16_t right, uint16_t delay) {
   MoveTable[index][RightMotorIndex] = right;
@@ -142,4 +142,3 @@ void loop() {
   }  
 
 }
-
